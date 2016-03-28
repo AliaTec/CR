@@ -1,0 +1,15 @@
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ResolveAssemblyReference.cache
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ITX.Aliatec.CartaFiniquito.resources
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ITX.Aliatec.Empresa.resources
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ITX.Aliatec.Deducciones.resources
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ITX.Aliatec.Percepciones.resources
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ITX.Aliatec.Resources.resources
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ITX.Aliatec.ReciboNomina.resources
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\Aliatec-ITX-GW.vbproj.GenerateResource.Cache
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ITX.Aliatec.dll.licenses
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ITX.Aliatec.dll
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ITX.Aliatec.xml
+D:\respaldo2\Desarrollos\GW\Aliatec-ITX-GW\obj\Release\ITX.Aliatec.pdb
+D:\respaldo2\Desarrollos\Web\bin\ITX.Aliatec.dll
+D:\respaldo2\Desarrollos\Web\bin\ITX.Aliatec.pdb
+D:\respaldo2\Desarrollos\Web\bin\ITX.Aliatec.xml
