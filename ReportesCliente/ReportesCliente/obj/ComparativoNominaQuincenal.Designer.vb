@@ -139,7 +139,7 @@ Partial Public Class ComparativoNominaQuincenal
         'ReportHeader1
         '
         Me.ReportHeader1.Controls.AddRange(New DataDynamics.ActiveReports.ARControl() {Me.TextBox33, Me.TextBox34, Me.TextBox39, Me.TextBox40, Me.ReportInfo1, Me.Label6, Me.Label8, Me.Label9, Me.Label10, Me.Label11, Me.TextBox1, Me.TextBox2, Me.TextBox3, Me.TextBox4, Me.TextBox5, Me.TextBox6, Me.TextBox7, Me.TextBox8, Me.Label12, Me.Label13, Me.Label14, Me.Label15, Me.TextBox9, Me.TextBox10, Me.TextBox11, Me.TextBox12})
-        Me.ReportHeader1.Height = 2.28125!
+        Me.ReportHeader1.Height = 2.25!
         Me.ReportHeader1.Name = "ReportHeader1"
         '
         'TextBox33
@@ -156,10 +156,10 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox33.Height = 0.25!
         Me.TextBox33.Left = 0.0!
         Me.TextBox33.Name = "TextBox33"
-        Me.TextBox33.Style = "ddo-char-set: 0; font-weight: bold; font-size: 14.25pt; "
+        Me.TextBox33.Style = "ddo-char-set: 0; font-weight: bold; font-size: 12pt; "
         Me.TextBox33.Text = "RazonSocial"
         Me.TextBox33.Top = 0.0625!
-        Me.TextBox33.Width = 5.0!
+        Me.TextBox33.Width = 6.0!
         '
         'TextBox34
         '
@@ -175,10 +175,10 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox34.Height = 0.25!
         Me.TextBox34.Left = 0.0!
         Me.TextBox34.Name = "TextBox34"
-        Me.TextBox34.Style = "ddo-char-set: 0; font-weight: bold; font-size: 14.25pt; "
+        Me.TextBox34.Style = "ddo-char-set: 0; font-weight: bold; font-size: 12pt; "
         Me.TextBox34.Text = "RFC"
         Me.TextBox34.Top = 0.375!
-        Me.TextBox34.Width = 1.8125!
+        Me.TextBox34.Width = 2.0!
         '
         'TextBox39
         '
@@ -194,10 +194,10 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox39.Height = 0.25!
         Me.TextBox39.Left = 2.0!
         Me.TextBox39.Name = "TextBox39"
-        Me.TextBox39.Style = "ddo-char-set: 0; font-weight: bold; font-size: 14.25pt; "
+        Me.TextBox39.Style = "ddo-char-set: 0; font-weight: bold; font-size: 12pt; "
         Me.TextBox39.Text = "Calle y Numero"
         Me.TextBox39.Top = 0.375!
-        Me.TextBox39.Width = 3.0!
+        Me.TextBox39.Width = 4.0!
         '
         'TextBox40
         '
@@ -213,10 +213,10 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox40.Height = 0.25!
         Me.TextBox40.Left = 6.0!
         Me.TextBox40.Name = "TextBox40"
-        Me.TextBox40.Style = "ddo-char-set: 0; font-weight: bold; font-size: 14.25pt; "
+        Me.TextBox40.Style = "ddo-char-set: 0; font-weight: bold; font-size: 12pt; "
         Me.TextBox40.Text = "Colonia"
         Me.TextBox40.Top = 0.375!
-        Me.TextBox40.Width = 2.0!
+        Me.TextBox40.Width = 3.0!
         '
         'ReportInfo1
         '
@@ -228,11 +228,11 @@ Partial Public Class ComparativoNominaQuincenal
         Me.ReportInfo1.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.ReportInfo1.Border.TopColor = System.Drawing.Color.Black
         Me.ReportInfo1.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
-        Me.ReportInfo1.FormatString = "{RunDateTime:MM/dd/yyyy}"
+        Me.ReportInfo1.FormatString = "{RunDateTime:d-MMM-yyyy}"
         Me.ReportInfo1.Height = 0.25!
         Me.ReportInfo1.Left = 6.0!
         Me.ReportInfo1.Name = "ReportInfo1"
-        Me.ReportInfo1.Style = "ddo-char-set: 0; font-weight: bold; font-size: 14.25pt; "
+        Me.ReportInfo1.Style = "ddo-char-set: 0; font-weight: bold; font-size: 12pt; "
         Me.ReportInfo1.Top = 0.0625!
         Me.ReportInfo1.Width = 2.0!
         '
@@ -251,9 +251,9 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label6.Left = 2.0!
         Me.Label6.Name = "Label6"
         Me.Label6.Style = "ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 15.75pt; "
-        Me.Label6.Text = "COMPARATIVO DE LA NOMINA"
+        Me.Label6.Text = "COMPARATIVO DE LA NOMINA QUINCENAL"
         Me.Label6.Top = 0.75!
-        Me.Label6.Width = 4.0!
+        Me.Label6.Width = 5.0!
         '
         'Label8
         '
@@ -288,7 +288,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label9.HyperLink = Nothing
         Me.Label9.Left = 0.0!
         Me.Label9.Name = "Label9"
-        Me.Label9.Style = "ddo-char-set: 0; font-weight: bold; font-size: 9.75pt; "
+        Me.Label9.Style = "ddo-char-set: 0; font-weight: bold; font-size: 9pt; "
         Me.Label9.Text = "Tipo de Nómina de Proceso:"
         Me.Label9.Top = 1.4375!
         Me.Label9.Width = 1.875!
@@ -309,7 +309,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label10.Name = "Label10"
         Me.Label10.Style = "ddo-char-set: 0; font-weight: bold; font-size: 9pt; "
         Me.Label10.Text = "Periodo Actual"
-        Me.Label10.Top = 1.75!
+        Me.Label10.Top = 1.6875!
         Me.Label10.Width = 1.0!
         '
         'Label11
@@ -326,10 +326,10 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label11.HyperLink = Nothing
         Me.Label11.Left = 0.0!
         Me.Label11.Name = "Label11"
-        Me.Label11.Style = "ddo-char-set: 0; font-weight: bold; font-size: 9pt; "
+        Me.Label11.Style = "ddo-char-set: 0; font-weight: bold; font-size: 8.25pt; "
         Me.Label11.Text = "Periodo Anterior"
-        Me.Label11.Top = 2.0!
-        Me.Label11.Width = 1.0625!
+        Me.Label11.Top = 1.9375!
+        Me.Label11.Width = 1.0!
         '
         'TextBox1
         '
@@ -385,7 +385,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Style = ""
         Me.TextBox3.Text = "TextBox1"
-        Me.TextBox3.Top = 1.75!
+        Me.TextBox3.Top = 1.6875!
         Me.TextBox3.Width = 1.0!
         '
         'TextBox4
@@ -404,7 +404,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Style = ""
         Me.TextBox4.Text = "TextBox1"
-        Me.TextBox4.Top = 2.0!
+        Me.TextBox4.Top = 1.9375!
         Me.TextBox4.Width = 1.0!
         '
         'TextBox5
@@ -423,7 +423,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Style = ""
         Me.TextBox5.Text = "TextBox1"
-        Me.TextBox5.Top = 1.75!
+        Me.TextBox5.Top = 1.6875!
         Me.TextBox5.Width = 0.5!
         '
         'TextBox6
@@ -442,7 +442,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Style = ""
         Me.TextBox6.Text = "TextBox1"
-        Me.TextBox6.Top = 2.0!
+        Me.TextBox6.Top = 1.9375!
         Me.TextBox6.Width = 0.5!
         '
         'TextBox7
@@ -499,7 +499,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label12.Name = "Label12"
         Me.Label12.Style = "ddo-char-set: 0; font-weight: bold; font-size: 9.75pt; "
         Me.Label12.Text = "Del"
-        Me.Label12.Top = 1.75!
+        Me.Label12.Top = 1.6875!
         Me.Label12.Width = 0.375!
         '
         'Label13
@@ -518,7 +518,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label13.Name = "Label13"
         Me.Label13.Style = "ddo-char-set: 0; font-weight: bold; font-size: 9.75pt; "
         Me.Label13.Text = "Del"
-        Me.Label13.Top = 2.0!
+        Me.Label13.Top = 1.9375!
         Me.Label13.Width = 0.375!
         '
         'Label14
@@ -537,7 +537,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label14.Name = "Label14"
         Me.Label14.Style = "ddo-char-set: 0; font-weight: bold; font-size: 9.75pt; "
         Me.Label14.Text = "Al"
-        Me.Label14.Top = 1.75!
+        Me.Label14.Top = 1.6875!
         Me.Label14.Width = 0.375!
         '
         'Label15
@@ -556,7 +556,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label15.Name = "Label15"
         Me.Label15.Style = "ddo-char-set: 0; font-weight: bold; font-size: 9.75pt; "
         Me.Label15.Text = "Al"
-        Me.Label15.Top = 2.0!
+        Me.Label15.Top = 1.9375!
         Me.Label15.Width = 0.375!
         '
         'TextBox9
@@ -575,7 +575,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Style = ""
         Me.TextBox9.Text = "fechaInicioActual"
-        Me.TextBox9.Top = 1.75!
+        Me.TextBox9.Top = 1.6875!
         Me.TextBox9.Width = 1.0!
         '
         'TextBox10
@@ -594,7 +594,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Style = ""
         Me.TextBox10.Text = "fechaFinActual"
-        Me.TextBox10.Top = 2.0!
+        Me.TextBox10.Top = 1.9375!
         Me.TextBox10.Width = 1.0!
         '
         'TextBox11
@@ -613,7 +613,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Style = ""
         Me.TextBox11.Text = "fechaInicioAnterior"
-        Me.TextBox11.Top = 1.75!
+        Me.TextBox11.Top = 1.6875!
         Me.TextBox11.Width = 1.0!
         '
         'TextBox12
@@ -632,7 +632,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Style = ""
         Me.TextBox12.Text = "fechaFinAnterior"
-        Me.TextBox12.Top = 2.0!
+        Me.TextBox12.Top = 1.9375!
         Me.TextBox12.Width = 1.0!
         '
         'ReportFooter1
@@ -660,8 +660,8 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label1.HyperLink = Nothing
         Me.Label1.Left = 0.0!
         Me.Label1.Name = "Label1"
-        Me.Label1.Style = "color: Black; ddo-char-set: 1; font-weight: bold; background-color: Silver; font-" & _
-            "size: 11.25pt; "
+        Me.Label1.Style = "color: Black; ddo-char-set: 1; font-weight: bold; background-color: DeepSkyBlue; " & _
+            "font-size: 11.25pt; "
         Me.Label1.Text = "Concepto"
         Me.Label1.Top = 0.0625!
         Me.Label1.Width = 1.0!
@@ -680,8 +680,8 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label2.HyperLink = Nothing
         Me.Label2.Left = 1.0!
         Me.Label2.Name = "Label2"
-        Me.Label2.Style = "color: Black; ddo-char-set: 1; font-weight: bold; background-color: Silver; font-" & _
-            "size: 11.25pt; "
+        Me.Label2.Style = "color: Black; ddo-char-set: 1; font-weight: bold; background-color: DeepSkyBlue; " & _
+            "font-size: 11.25pt; "
         Me.Label2.Text = "Descripción"
         Me.Label2.Top = 0.0625!
         Me.Label2.Width = 2.0!
@@ -700,8 +700,8 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label3.HyperLink = Nothing
         Me.Label3.Left = 3.0!
         Me.Label3.Name = "Label3"
-        Me.Label3.Style = "color: Black; ddo-char-set: 1; font-weight: bold; background-color: Silver; font-" & _
-            "size: 11.25pt; "
+        Me.Label3.Style = "color: Black; ddo-char-set: 1; font-weight: bold; background-color: DeepSkyBlue; " & _
+            "font-size: 11.25pt; "
         Me.Label3.Text = "Tipo"
         Me.Label3.Top = 0.0625!
         Me.Label3.Width = 1.0!
@@ -721,7 +721,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label4.Left = 4.0!
         Me.Label4.Name = "Label4"
         Me.Label4.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label4.Text = "Importe Actual"
         Me.Label4.Top = 0.0625!
         Me.Label4.Width = 1.0!
@@ -741,7 +741,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label5.Left = 5.0!
         Me.Label5.Name = "Label5"
         Me.Label5.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label5.Text = "Importe Anterior"
         Me.Label5.Top = 0.0625!
         Me.Label5.Width = 1.0!
@@ -761,7 +761,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label7.Left = 6.0!
         Me.Label7.Name = "Label7"
         Me.Label7.Style = "color: Black; ddo-char-set: 0; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label7.Text = "Gravable Actual"
         Me.Label7.Top = 0.0625!
         Me.Label7.Width = 1.0!
@@ -802,7 +802,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label16.Left = 7.0!
         Me.Label16.Name = "Label16"
         Me.Label16.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label16.Text = "Gravable Anterior"
         Me.Label16.Top = 0.0625!
         Me.Label16.Width = 1.0!
@@ -822,7 +822,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label17.Left = 8.0!
         Me.Label17.Name = "Label17"
         Me.Label17.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label17.Text = "Exento Actual"
         Me.Label17.Top = 0.0625!
         Me.Label17.Width = 1.0!
@@ -842,7 +842,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label18.Left = 9.0!
         Me.Label18.Name = "Label18"
         Me.Label18.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label18.Text = "Exento Anterior"
         Me.Label18.Top = 0.0625!
         Me.Label18.Width = 1.0!
@@ -862,7 +862,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label19.Left = 12.0!
         Me.Label19.Name = "Label19"
         Me.Label19.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label19.Text = "Empleados Actual"
         Me.Label19.Top = 0.0625!
         Me.Label19.Width = 1.0!
@@ -882,7 +882,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label20.Left = 13.0!
         Me.Label20.Name = "Label20"
         Me.Label20.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label20.Text = "Empleados Anterior"
         Me.Label20.Top = 0.0625!
         Me.Label20.Width = 1.0!
@@ -902,7 +902,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label21.Left = 14.0!
         Me.Label21.Name = "Label21"
         Me.Label21.Style = "color: Black; ddo-char-set: 0; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label21.Text = "Variación Importe"
         Me.Label21.Top = 0.0625!
         Me.Label21.Width = 1.0!
@@ -922,7 +922,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label22.Left = 15.0!
         Me.Label22.Name = "Label22"
         Me.Label22.Style = "color: Black; ddo-char-set: 0; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label22.Text = "Variación Empleados"
         Me.Label22.Top = 0.0625!
         Me.Label22.Width = 1.0!
@@ -963,7 +963,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label23.Left = 10.0!
         Me.Label23.Name = "Label23"
         Me.Label23.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label23.Text = "Dato Actual"
         Me.Label23.Top = 0.0625!
         Me.Label23.Width = 1.0!
@@ -983,7 +983,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.Label24.Left = 11.0!
         Me.Label24.Name = "Label24"
         Me.Label24.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
-            "color: Silver; font-size: 11.25pt; "
+            "color: DeepSkyBlue; font-size: 11.25pt; "
         Me.Label24.Text = "Dato Anterior"
         Me.Label24.Top = 0.0625!
         Me.Label24.Width = 1.0!
@@ -1040,7 +1040,7 @@ Partial Public Class ComparativoNominaQuincenal
         Me.MasterReport = False
         Me.PageSettings.PaperHeight = 11.0!
         Me.PageSettings.PaperWidth = 8.5!
-        Me.PrintWidth = 16.16666!
+        Me.PrintWidth = 16.05208!
         Me.Sections.Add(Me.ReportHeader1)
         Me.Sections.Add(Me.PageHeader1)
         Me.Sections.Add(Me.Detail1)

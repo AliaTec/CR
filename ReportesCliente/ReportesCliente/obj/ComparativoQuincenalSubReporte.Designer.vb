@@ -17,8 +17,6 @@ Partial Public Class ComparativoQuincenalSubReporte
     Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(ComparativoQuincenalSubReporte))
         Me.Detail1 = New DataDynamics.ActiveReports.Detail
-        Me.ReportHeader1 = New DataDynamics.ActiveReports.ReportHeader
-        Me.ReportFooter1 = New DataDynamics.ActiveReports.ReportFooter
         Me.TextBox1 = New DataDynamics.ActiveReports.TextBox
         Me.TextBox2 = New DataDynamics.ActiveReports.TextBox
         Me.TextBox3 = New DataDynamics.ActiveReports.TextBox
@@ -55,18 +53,8 @@ Partial Public Class ComparativoQuincenalSubReporte
         '
         Me.Detail1.ColumnSpacing = 0.0!
         Me.Detail1.Controls.AddRange(New DataDynamics.ActiveReports.ARControl() {Me.TextBox1, Me.TextBox2, Me.TextBox3, Me.TextBox4, Me.TextBox5, Me.TextBox6, Me.TextBox7, Me.TextBox8, Me.TextBox9, Me.TextBox10, Me.TextBox11, Me.TextBox12, Me.TextBox13, Me.TextBox14, Me.TextBox15})
-        Me.Detail1.Height = 0.21875!
+        Me.Detail1.Height = 0.2083333!
         Me.Detail1.Name = "Detail1"
-        '
-        'ReportHeader1
-        '
-        Me.ReportHeader1.Height = 0.05208333!
-        Me.ReportHeader1.Name = "ReportHeader1"
-        '
-        'ReportFooter1
-        '
-        Me.ReportFooter1.Height = 0.04166667!
-        Me.ReportFooter1.Name = "ReportFooter1"
         '
         'TextBox1
         '
@@ -98,13 +86,13 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox2.Border.TopColor = System.Drawing.Color.Black
         Me.TextBox2.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox2.DataField = "Descripcion"
-        Me.TextBox2.Height = 0.1979167!
+        Me.TextBox2.Height = 0.1875!
         Me.TextBox2.Left = 1.0!
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Style = ""
         Me.TextBox2.Text = "TextBox1"
         Me.TextBox2.Top = 0.0!
-        Me.TextBox2.Width = 1.0!
+        Me.TextBox2.Width = 3.0!
         '
         'TextBox3
         '
@@ -118,7 +106,7 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox3.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox3.DataField = "Tipo"
         Me.TextBox3.Height = 0.1979167!
-        Me.TextBox3.Left = 2.0!
+        Me.TextBox3.Left = 4.0!
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Style = ""
         Me.TextBox3.Text = "TextBox1"
@@ -137,9 +125,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox4.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox4.DataField = "ImporteAct"
         Me.TextBox4.Height = 0.1979167!
-        Me.TextBox4.Left = 3.0!
+        Me.TextBox4.Left = 5.0!
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Style = ""
+        Me.TextBox4.Style = "text-align: right; "
         Me.TextBox4.Text = "TextBox1"
         Me.TextBox4.Top = 0.0!
         Me.TextBox4.Width = 1.0!
@@ -156,9 +144,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox5.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox5.DataField = "ImporteAnt"
         Me.TextBox5.Height = 0.1979167!
-        Me.TextBox5.Left = 4.0!
+        Me.TextBox5.Left = 6.0!
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Style = ""
+        Me.TextBox5.Style = "text-align: right; "
         Me.TextBox5.Text = "TextBox1"
         Me.TextBox5.Top = 0.0!
         Me.TextBox5.Width = 1.0!
@@ -175,9 +163,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox6.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox6.DataField = "GravableAct"
         Me.TextBox6.Height = 0.1979167!
-        Me.TextBox6.Left = 5.0!
+        Me.TextBox6.Left = 7.0!
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Style = ""
+        Me.TextBox6.Style = "text-align: right; "
         Me.TextBox6.Text = "TextBox1"
         Me.TextBox6.Top = 0.0!
         Me.TextBox6.Width = 1.0!
@@ -194,9 +182,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox7.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox7.DataField = "GravableAnt"
         Me.TextBox7.Height = 0.1979167!
-        Me.TextBox7.Left = 6.0!
+        Me.TextBox7.Left = 8.0!
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Style = ""
+        Me.TextBox7.Style = "text-align: right; "
         Me.TextBox7.Text = "TextBox1"
         Me.TextBox7.Top = 0.0!
         Me.TextBox7.Width = 1.0!
@@ -213,9 +201,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox8.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox8.DataField = "ExentoAct"
         Me.TextBox8.Height = 0.1979167!
-        Me.TextBox8.Left = 7.0!
+        Me.TextBox8.Left = 9.0!
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Style = ""
+        Me.TextBox8.Style = "text-align: right; "
         Me.TextBox8.Text = "TextBox1"
         Me.TextBox8.Top = 0.0!
         Me.TextBox8.Width = 1.0!
@@ -232,9 +220,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox9.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox9.DataField = "ExentoAnt"
         Me.TextBox9.Height = 0.1979167!
-        Me.TextBox9.Left = 8.0!
+        Me.TextBox9.Left = 10.0!
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Style = ""
+        Me.TextBox9.Style = "text-align: right; "
         Me.TextBox9.Text = "TextBox1"
         Me.TextBox9.Top = 0.0!
         Me.TextBox9.Width = 1.0!
@@ -251,9 +239,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox10.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox10.DataField = "DatoAct"
         Me.TextBox10.Height = 0.1979167!
-        Me.TextBox10.Left = 9.0!
+        Me.TextBox10.Left = 11.0!
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Style = ""
+        Me.TextBox10.Style = "text-align: right; "
         Me.TextBox10.Text = "TextBox1"
         Me.TextBox10.Top = 0.0!
         Me.TextBox10.Width = 1.0!
@@ -270,9 +258,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox11.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox11.DataField = "DatoAnt"
         Me.TextBox11.Height = 0.1979167!
-        Me.TextBox11.Left = 10.0!
+        Me.TextBox11.Left = 12.0!
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Style = ""
+        Me.TextBox11.Style = "text-align: right; "
         Me.TextBox11.Text = "TextBox1"
         Me.TextBox11.Top = 0.0!
         Me.TextBox11.Width = 1.0!
@@ -289,9 +277,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox12.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox12.DataField = "EmpleadosAct"
         Me.TextBox12.Height = 0.1979167!
-        Me.TextBox12.Left = 11.0!
+        Me.TextBox12.Left = 13.0!
         Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Style = ""
+        Me.TextBox12.Style = "text-align: right; "
         Me.TextBox12.Text = "TextBox1"
         Me.TextBox12.Top = 0.0!
         Me.TextBox12.Width = 1.0!
@@ -308,9 +296,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox13.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox13.DataField = "EmpleadosAnt"
         Me.TextBox13.Height = 0.1979167!
-        Me.TextBox13.Left = 12.0!
+        Me.TextBox13.Left = 14.0!
         Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Style = ""
+        Me.TextBox13.Style = "text-align: right; "
         Me.TextBox13.Text = "TextBox1"
         Me.TextBox13.Top = 0.0!
         Me.TextBox13.Width = 1.0!
@@ -327,9 +315,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox14.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox14.DataField = "VariacionImp"
         Me.TextBox14.Height = 0.1979167!
-        Me.TextBox14.Left = 13.0!
+        Me.TextBox14.Left = 15.0!
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Style = ""
+        Me.TextBox14.Style = "text-align: right; "
         Me.TextBox14.Text = "TextBox1"
         Me.TextBox14.Top = 0.0!
         Me.TextBox14.Width = 1.0!
@@ -346,9 +334,9 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.TextBox15.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.TextBox15.DataField = "VariacionEmp"
         Me.TextBox15.Height = 0.1979167!
-        Me.TextBox15.Left = 14.0!
+        Me.TextBox15.Left = 16.0!
         Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Style = ""
+        Me.TextBox15.Style = "text-align: right; "
         Me.TextBox15.Text = "TextBox1"
         Me.TextBox15.Top = 0.0!
         Me.TextBox15.Width = 1.0!
@@ -358,10 +346,8 @@ Partial Public Class ComparativoQuincenalSubReporte
         Me.MasterReport = False
         Me.PageSettings.PaperHeight = 11.0!
         Me.PageSettings.PaperWidth = 8.5!
-        Me.PrintWidth = 16.39583!
-        Me.Sections.Add(Me.ReportHeader1)
+        Me.PrintWidth = 17.07291!
         Me.Sections.Add(Me.Detail1)
-        Me.Sections.Add(Me.ReportFooter1)
         Me.StyleSheet.Add(New DDCssLib.StyleSheetRule("font-family: Arial; font-style: normal; text-decoration: none; font-weight: norma" & _
                     "l; font-size: 10pt; color: Black; ", "Normal"))
         Me.StyleSheet.Add(New DDCssLib.StyleSheetRule("font-size: 16pt; font-weight: bold; ", "Heading1", "Normal"))
@@ -392,8 +378,6 @@ Partial Public Class ComparativoQuincenalSubReporte
     Friend WithEvents TextBox4 As DataDynamics.ActiveReports.TextBox
     Friend WithEvents TextBox5 As DataDynamics.ActiveReports.TextBox
     Friend WithEvents TextBox6 As DataDynamics.ActiveReports.TextBox
-    Friend WithEvents ReportHeader1 As DataDynamics.ActiveReports.ReportHeader
-    Friend WithEvents ReportFooter1 As DataDynamics.ActiveReports.ReportFooter
     Friend WithEvents TextBox7 As DataDynamics.ActiveReports.TextBox
     Friend WithEvents TextBox8 As DataDynamics.ActiveReports.TextBox
     Friend WithEvents TextBox9 As DataDynamics.ActiveReports.TextBox
