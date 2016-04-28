@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{137975FA-E5CC-447E-804D-6D7614C69D71}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
@@ -129,6 +129,8 @@
     <Content Include="bin\ReportesCliente.pdb" />
     <Content Include="bin\ReportesCliente.xml" />
     <Content Include="CartaFiniquitoCR.aspx" />
+    <Content Include="ComparativoNominaQuincenal.aspx" />
+    <Content Include="ComparativoNominaMensual.aspx" />
     <Content Include="PolizaSuntory.aspx" />
     <Content Include="Reporte29.aspx" />
     <Content Include="Reporte28.aspx" />
@@ -177,7 +179,45 @@
       <DependentUpon>CartaFiniquitoCR.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="ComparativoNominaQuincenal.aspx.designer.vb">
+      <DependentUpon>ComparativoNominaQuincenal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComparativoNominaQuincenal.aspx.vb">
+      <DependentUpon>ComparativoNominaQuincenal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComparativoNominaMensual.aspx.designer.vb">
+      <DependentUpon>ComparativoNominaMensual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComparativoNominaMensual.aspx.vb">
+      <DependentUpon>ComparativoNominaMensual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="obj\CartaFiniquitoLogo.vb" />
+    <Compile Include="obj\ComparativoNominaQuincenal.Designer.vb">
+      <DependentUpon>ComparativoNominaQuincenal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ComparativoNominaQuincenal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ComparativoQuincenalSubReporte.Designer.vb">
+      <DependentUpon>ComparativoQuincenalSubReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ComparativoQuincenalSubReporte.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ComparativoNominaMensual.Designer.vb">
+      <DependentUpon>ComparativoNominaMensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ComparativoNominaMensual.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\ComparativoMensualSubReporte.Designer.vb">
+      <DependentUpon>ComparativoMensualSubReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\ComparativoMensualSubReporte.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="PolizaSuntory.aspx.designer.vb">
       <DependentUpon>PolizaSuntory.aspx</DependentUpon>
     </Compile>
@@ -792,189 +832,267 @@
   <ItemGroup>
     <EmbeddedResource Include="obj\CartaFiniquito.resx">
       <DependentUpon>CartaFiniquito.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\CentroCostosEmpleado.resx">
       <DependentUpon>CentroCostosEmpleado.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\AcumuladodeConceptos.resx">
       <DependentUpon>AcumuladodeConceptos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ComparativoNominaQuincenal.resx">
+      <DependentUpon>ComparativoNominaQuincenal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ComparativoQuincenalSubReporte.resx">
+      <DependentUpon>ComparativoQuincenalSubReporte.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ComparativoNominaMensual.resx">
+      <DependentUpon>ComparativoNominaMensual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\ComparativoMensualSubReporte.resx">
+      <DependentUpon>ComparativoMensualSubReporte.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISN.es-MX.resx">
       <DependentUpon>PercepcionesMensualISN.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PolizaSuntory.resx">
       <DependentUpon>PolizaSuntory.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PolizaSuntoryTotal.resx">
       <DependentUpon>PolizaSuntoryTotal.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNJUCH.resx">
       <DependentUpon>PercepcionesMensualISNJUCH.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNLE.resx">
       <DependentUpon>PercepcionesMensualISNLE.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNLE.resx">
       <DependentUpon>ISNLE.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNHE.resx">
       <DependentUpon>PercepcionesMensualISNHE.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNHE.resx">
       <DependentUpon>ISNHE.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNQU.resx">
       <DependentUpon>PercepcionesMensualISNQU.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNQU.resx">
       <DependentUpon>ISNQU.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNJUCH.resx">
       <DependentUpon>ISNJUCH.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNPN.resx">
       <DependentUpon>PercepcionesMensualISNPN.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNPN.resx">
       <DependentUpon>ISNPN.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNMTY.resx">
       <DependentUpon>PercepcionesMensualISNMTY.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNMTY.resx">
       <DependentUpon>ISNMTY.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNSLP.resx">
       <DependentUpon>PercepcionesMensualISNSLP.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNSLP.resx">
       <DependentUpon>ISNSLP.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNCAN.resx">
       <DependentUpon>PercepcionesMensualISNCAN.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNCAN.resx">
       <DependentUpon>ISNCAN.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNMER.resx">
       <DependentUpon>PercepcionesMensualISNMER.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNMER.resx">
       <DependentUpon>ISNMER.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNVE.resx">
       <DependentUpon>PercepcionesMensualISNVE.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNVE.resx">
       <DependentUpon>ISNVE.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNGUA.resx">
       <DependentUpon>PercepcionesMensualISNGUA.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNGUA.resx">
       <DependentUpon>ISNGUA.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNCUE.resx">
       <DependentUpon>PercepcionesMensualISNCUE.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNCUE.resx">
       <DependentUpon>ISNCUE.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNAG.resx">
       <DependentUpon>PercepcionesMensualISNAG.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNAG.resx">
       <DependentUpon>ISNAG.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNTI.resx">
       <DependentUpon>PercepcionesMensualISNTI.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNTI.resx">
       <DependentUpon>ISNTI.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISNMEX.resx">
       <DependentUpon>PercepcionesMensualISNMEX.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISNMEX.resx">
       <DependentUpon>ISNMEX.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesEmpleadosPorConceptoUnutario.resx">
       <DependentUpon>PercepcionesEmpleadosPorConceptoUnutario.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\EmpleadosporConceptoUnitario.resx">
       <DependentUpon>EmpleadosporConceptoUnitario.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ImportesCentroCostos.resx">
       <DependentUpon>ImportesCentroCostos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Deducciones.resx">
       <DependentUpon>Deducciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Empresa.resx">
       <DependentUpon>Empresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\NewActiveReport2.resx">
       <DependentUpon>NewActiveReport2.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Percepciones.resx">
       <DependentUpon>Percepciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesEmpleadosPorConcepto.resx">
       <DependentUpon>PercepcionesEmpleadosPorConcepto.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesProvisionesCentroCostos.resx">
       <DependentUpon>PercepcionesProvisionesCentroCostos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Provisiones.resx">
       <DependentUpon>Provisiones.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ProvisionesCentroCostos.resx">
       <DependentUpon>ProvisionesCentroCostos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ProvisionesPorEmpresa.resx">
       <DependentUpon>ProvisionesPorEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\EmpleadosporConcepto.resx">
       <DependentUpon>EmpleadosporConcepto.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\DeduccionesMensualISNMEX.resx">
       <DependentUpon>DeduccionesMensualISNMEX.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\DeduccionesMensualISN.resx">
       <DependentUpon>DeduccionesMensualISN.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensualISN.resx">
       <DependentUpon>PercepcionesMensualISN.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ISN.resx">
       <DependentUpon>ISN.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\EmpresaMensual.resx">
       <DependentUpon>EmpresaMensual.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\DeduccionesMensual.resx">
       <DependentUpon>DeduccionesMensual.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesMensual.resx">
       <DependentUpon>PercepcionesMensual.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ExentosGravadosMensual.resx">
       <DependentUpon>ExentosGravadosMensual.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\EmpresaGravadosExentosPeriodo.resx">
       <DependentUpon>EmpresaGravadosExentosPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\NewActiveReport1.resx">
       <DependentUpon>NewActiveReport1.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\GravadosExentosPeriodo.resx">
       <DependentUpon>GravadosExentosPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\NewActiveReport3.resx">
       <DependentUpon>NewActiveReport3.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Percepciones2.resx">
       <DependentUpon>Percepciones2.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -986,12 +1104,15 @@
     <EmbeddedResource Include="obj\Debug\ReportesCliente.Resources.resources" />
     <EmbeddedResource Include="obj\DeduccionesGravadosExentosPeriodo.resx">
       <DependentUpon>DeduccionesGravadosExentosPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\PercepcionesGravadosExentosPeriodo.resx">
       <DependentUpon>PercepcionesGravadosExentosPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\ReporteConcentradoAnualAR.resx">
       <DependentUpon>ReporteConcentradoAnualAR.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
