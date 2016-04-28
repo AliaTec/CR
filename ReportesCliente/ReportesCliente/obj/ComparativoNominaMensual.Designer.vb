@@ -59,6 +59,8 @@ Partial Public Class ComparativoNominaMensual
         Me.Label21 = New DataDynamics.ActiveReports.Label
         Me.Label22 = New DataDynamics.ActiveReports.Label
         Me.Line1 = New DataDynamics.ActiveReports.Line
+        Me.Label9 = New DataDynamics.ActiveReports.Label
+        Me.Label23 = New DataDynamics.ActiveReports.Label
         Me.Line2 = New DataDynamics.ActiveReports.Line
         Me.Line3 = New DataDynamics.ActiveReports.Line
         Me.PageFooter1 = New DataDynamics.ActiveReports.PageFooter
@@ -98,13 +100,15 @@ Partial Public Class ComparativoNominaMensual
         CType(Me.Label20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Label21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Label22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Label9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Label23, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         '
         'Detail1
         '
         Me.Detail1.ColumnSpacing = 0.0!
         Me.Detail1.Controls.AddRange(New DataDynamics.ActiveReports.ARControl() {Me.SubReport3})
-        Me.Detail1.Height = 4.083333!
+        Me.Detail1.Height = 4.052083!
         Me.Detail1.Name = "Detail1"
         '
         'SubReport3
@@ -124,7 +128,7 @@ Partial Public Class ComparativoNominaMensual
         Me.SubReport3.Report = Nothing
         Me.SubReport3.ReportName = "SubReport3"
         Me.SubReport3.Top = 0.0625!
-        Me.SubReport3.Width = 14.0!
+        Me.SubReport3.Width = 16.0!
         '
         'ReportHeader1
         '
@@ -570,13 +574,13 @@ Partial Public Class ComparativoNominaMensual
         '
         'ReportFooter1
         '
-        Me.ReportFooter1.Height = 0.25!
+        Me.ReportFooter1.Height = 0.03125!
         Me.ReportFooter1.Name = "ReportFooter1"
         '
         'PageHeader1
         '
-        Me.PageHeader1.Controls.AddRange(New DataDynamics.ActiveReports.ARControl() {Me.Label1, Me.Label2, Me.Label3, Me.Label4, Me.Label5, Me.Label7, Me.Line4, Me.Label16, Me.Label17, Me.Label18, Me.Label19, Me.Label20, Me.Label21, Me.Label22, Me.Line1, Me.Line2, Me.Line3})
-        Me.PageHeader1.Height = 0.4791667!
+        Me.PageHeader1.Controls.AddRange(New DataDynamics.ActiveReports.ARControl() {Me.Label1, Me.Label2, Me.Label3, Me.Label4, Me.Label5, Me.Label7, Me.Line4, Me.Label16, Me.Label17, Me.Label18, Me.Label19, Me.Label20, Me.Label21, Me.Label22, Me.Line1, Me.Label9, Me.Label23, Me.Line2, Me.Line3})
+        Me.PageHeader1.Height = 0.46875!
         Me.PageHeader1.Name = "PageHeader1"
         '
         'Label1
@@ -792,7 +796,7 @@ Partial Public Class ComparativoNominaMensual
         Me.Label19.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.Label19.Height = 0.375!
         Me.Label19.HyperLink = Nothing
-        Me.Label19.Left = 10.0!
+        Me.Label19.Left = 12.0!
         Me.Label19.Name = "Label19"
         Me.Label19.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
             "color: Silver; font-size: 11.25pt; "
@@ -812,7 +816,7 @@ Partial Public Class ComparativoNominaMensual
         Me.Label20.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.Label20.Height = 0.375!
         Me.Label20.HyperLink = Nothing
-        Me.Label20.Left = 11.0!
+        Me.Label20.Left = 13.0!
         Me.Label20.Name = "Label20"
         Me.Label20.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
             "color: Silver; font-size: 11.25pt; "
@@ -832,7 +836,7 @@ Partial Public Class ComparativoNominaMensual
         Me.Label21.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.Label21.Height = 0.375!
         Me.Label21.HyperLink = Nothing
-        Me.Label21.Left = 12.0!
+        Me.Label21.Left = 14.0!
         Me.Label21.Name = "Label21"
         Me.Label21.Style = "color: Black; ddo-char-set: 0; text-align: center; font-weight: bold; background-" & _
             "color: Silver; font-size: 11.25pt; "
@@ -852,7 +856,7 @@ Partial Public Class ComparativoNominaMensual
         Me.Label22.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.Label22.Height = 0.375!
         Me.Label22.HyperLink = Nothing
-        Me.Label22.Left = 13.0!
+        Me.Label22.Left = 15.0!
         Me.Label22.Name = "Label22"
         Me.Label22.Style = "color: Black; ddo-char-set: 0; text-align: center; font-weight: bold; background-" & _
             "color: Silver; font-size: 11.25pt; "
@@ -871,15 +875,55 @@ Partial Public Class ComparativoNominaMensual
         Me.Line1.Border.TopColor = System.Drawing.Color.Black
         Me.Line1.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
         Me.Line1.Height = 0.375!
-        Me.Line1.Left = 14.0!
+        Me.Line1.Left = 16.0!
         Me.Line1.LineWeight = 1.0!
         Me.Line1.Name = "Line1"
         Me.Line1.Top = 0.0625!
         Me.Line1.Width = 0.0!
-        Me.Line1.X1 = 14.0!
-        Me.Line1.X2 = 14.0!
+        Me.Line1.X1 = 16.0!
+        Me.Line1.X2 = 16.0!
         Me.Line1.Y1 = 0.0625!
         Me.Line1.Y2 = 0.4375!
+        '
+        'Label9
+        '
+        Me.Label9.Border.BottomColor = System.Drawing.Color.Black
+        Me.Label9.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None
+        Me.Label9.Border.LeftColor = System.Drawing.Color.Black
+        Me.Label9.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None
+        Me.Label9.Border.RightColor = System.Drawing.Color.Black
+        Me.Label9.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None
+        Me.Label9.Border.TopColor = System.Drawing.Color.Black
+        Me.Label9.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
+        Me.Label9.Height = 0.375!
+        Me.Label9.HyperLink = Nothing
+        Me.Label9.Left = 10.0!
+        Me.Label9.Name = "Label9"
+        Me.Label9.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
+            "color: Silver; font-size: 11.25pt; "
+        Me.Label9.Text = "Dato        Actual"
+        Me.Label9.Top = 0.0625!
+        Me.Label9.Width = 1.0!
+        '
+        'Label23
+        '
+        Me.Label23.Border.BottomColor = System.Drawing.Color.Black
+        Me.Label23.Border.BottomStyle = DataDynamics.ActiveReports.BorderLineStyle.None
+        Me.Label23.Border.LeftColor = System.Drawing.Color.Black
+        Me.Label23.Border.LeftStyle = DataDynamics.ActiveReports.BorderLineStyle.None
+        Me.Label23.Border.RightColor = System.Drawing.Color.Black
+        Me.Label23.Border.RightStyle = DataDynamics.ActiveReports.BorderLineStyle.None
+        Me.Label23.Border.TopColor = System.Drawing.Color.Black
+        Me.Label23.Border.TopStyle = DataDynamics.ActiveReports.BorderLineStyle.None
+        Me.Label23.Height = 0.375!
+        Me.Label23.HyperLink = Nothing
+        Me.Label23.Left = 11.0!
+        Me.Label23.Name = "Label23"
+        Me.Label23.Style = "color: Black; ddo-char-set: 1; text-align: center; font-weight: bold; background-" & _
+            "color: Silver; font-size: 11.25pt; "
+        Me.Label23.Text = "Dato Anterior"
+        Me.Label23.Top = 0.0625!
+        Me.Label23.Width = 1.0!
         '
         'Line2
         '
@@ -896,9 +940,9 @@ Partial Public Class ComparativoNominaMensual
         Me.Line2.LineWeight = 1.0!
         Me.Line2.Name = "Line2"
         Me.Line2.Top = 0.4375!
-        Me.Line2.Width = 14.0!
-        Me.Line2.X1 = 14.0!
-        Me.Line2.X2 = 0.0!
+        Me.Line2.Width = 16.0!
+        Me.Line2.X1 = 0.0!
+        Me.Line2.X2 = 16.0!
         Me.Line2.Y1 = 0.4375!
         Me.Line2.Y2 = 0.4375!
         '
@@ -917,15 +961,15 @@ Partial Public Class ComparativoNominaMensual
         Me.Line3.LineWeight = 1.0!
         Me.Line3.Name = "Line3"
         Me.Line3.Top = 0.0625!
-        Me.Line3.Width = 14.0!
+        Me.Line3.Width = 16.0!
         Me.Line3.X1 = 0.0!
-        Me.Line3.X2 = 14.0!
+        Me.Line3.X2 = 16.0!
         Me.Line3.Y1 = 0.0625!
         Me.Line3.Y2 = 0.0625!
         '
         'PageFooter1
         '
-        Me.PageFooter1.Height = 0.25!
+        Me.PageFooter1.Height = 0.04166667!
         Me.PageFooter1.Name = "PageFooter1"
         '
         'ComparativoNominaMensual
@@ -933,7 +977,7 @@ Partial Public Class ComparativoNominaMensual
         Me.MasterReport = False
         Me.PageSettings.PaperHeight = 11.0!
         Me.PageSettings.PaperWidth = 8.5!
-        Me.PrintWidth = 14.03125!
+        Me.PrintWidth = 16.07292!
         Me.Sections.Add(Me.ReportHeader1)
         Me.Sections.Add(Me.PageHeader1)
         Me.Sections.Add(Me.Detail1)
@@ -981,6 +1025,8 @@ Partial Public Class ComparativoNominaMensual
         CType(Me.Label20, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Label21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Label22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Label9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Label23, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
     End Sub
@@ -1027,6 +1073,8 @@ Partial Public Class ComparativoNominaMensual
     Friend WithEvents Label21 As DataDynamics.ActiveReports.Label
     Friend WithEvents Label22 As DataDynamics.ActiveReports.Label
     Friend WithEvents Line1 As DataDynamics.ActiveReports.Line
+    Friend WithEvents Label9 As DataDynamics.ActiveReports.Label
+    Friend WithEvents Label23 As DataDynamics.ActiveReports.Label
     Friend WithEvents Line2 As DataDynamics.ActiveReports.Line
     Friend WithEvents Line3 As DataDynamics.ActiveReports.Line
 End Class

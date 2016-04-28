@@ -50,19 +50,18 @@ Partial Class ComparativoMensual
 
         Dim ParamIdRazonSocial As New Parameter
         ParamIdRazonSocial.Key = "IdRazonSocial"
-        'L0g 30/10/2013
-        Dim ParamIdCategoria As New Parameter
-        ParamIdCategoria.Key = "IdCategoria"
-
+        
         Dim ParamIdTipoNominaAsig As New Parameter
         ParamIdTipoNominaAsig.Key = "IdTipoNominaAsig"
         ParamIdTipoNominaAsig.Type = Parameter.DataType.String
 
         Dim ParamfolioHasta As New Parameter
         ParamfolioHasta.Key = "folioHasta"
+        ParamIdTipoNominaAsig.Type = Parameter.DataType.String
 
         Dim ParamfolioDesde As New Parameter
         ParamfolioDesde.Key = "folioDesde"
+        ParamIdTipoNominaAsig.Type = Parameter.DataType.String
 
         Dim ParamUID As New Parameter
         ParamUID.Key = "UID"

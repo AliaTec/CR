@@ -77,9 +77,11 @@ Public Class ComparativoNominaQuincenal
 
         Dim ParamfolioDesde As New Parameter
         ParamfolioDesde.Key = "folioDesde"
+        ParamfolioDesde.Type = Parameter.DataType.String
 
         Dim ParamfolioHasta As New Parameter
         ParamfolioHasta.Key = "folioHasta"
+        ParamfolioHasta.Type = Parameter.DataType.String
 
         Dim ParamUID As New Parameter
         ParamUID.Key = "UID"
@@ -112,13 +114,12 @@ Public Class ComparativoNominaQuincenal
         SubReportePercepciones.Parameters("IdRazonSocial").Value = Me.Parameters("IdRazonSocial").Value
         SubReportePercepciones.Parameters("IdTipoNominaAsig").Value = Me.Parameters("IdTipoNominaAsig").Value
         SubReportePercepciones.Parameters("IdTipoNominaProc").Value = Me.Parameters("IdTipoNominaProc").Value
-        SubReportePercepciones.Parameters("folioHasta").Value = Me.Parameters("folioDesde").Value
+        SubReportePercepciones.Parameters("folioDesde").Value = Me.Parameters("folioDesde").Value
         SubReportePercepciones.Parameters("folioHasta").Value = Me.Parameters("folioHasta").Value
         SubReportePercepciones.Parameters("UID").Value = Me.Parameters("UID").Value
         SubReportePercepciones.Parameters("LID").Value = Me.Parameters("LID").Value
         SubReportePercepciones.Parameters("idAccion").Value = Me.Parameters("idAccion").Value
         Me.SubReport3.Report = SubReportePercepciones
-
 
     End Sub
 

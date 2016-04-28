@@ -46,11 +46,8 @@ Partial Class ComparativoQuincenal
         RPT.DataSource = New DataDynamics.ActiveReports.DataSources.OleDBDataSource("Provider=SQLOLEDB.1;" + sConnection, "sp_Reporte_ListadoNomina_DatosOrg_Aliatec @IdRazonSocial = <%IdRazonSocial%>,@IdTipoNominaAsig=<" & _
                 "%IdTipoNominaAsig%>,@IdTipoNominaProc = <%IdTipoNominaProc%>,@folioDesde = <%folioDesde%>,@folioHasta = <%folioHasta%>,@UID = <%UID%>, @LID = <%LID%>, @idAccion = <%idAccion%>", 90)
 
-
-
         Dim ParamIdRazonSocial As New Parameter
         ParamIdRazonSocial.Key = "IdRazonSocial"
-        'L0g 30/10/2013
 
         Dim ParamIdTipoNominaAsig As New Parameter
         ParamIdTipoNominaAsig.Key = "IdTipoNominaAsig"
@@ -60,11 +57,13 @@ Partial Class ComparativoQuincenal
         ParamIdTipoNominaProc.Key = "IdTipoNominaProc"
         ParamIdTipoNominaProc.Type = Parameter.DataType.String
 
-        Dim ParamfolioDesde As New Parameter
-        ParamfolioDesde.Key = "folioDesde"
-
         Dim ParamfolioHasta As New Parameter
         ParamfolioHasta.Key = "folioHasta"
+        ParamIdTipoNominaAsig.Type = Parameter.DataType.String
+
+        Dim ParamfolioDesde As New Parameter
+        ParamfolioDesde.Key = "folioDesde"
+        ParamIdTipoNominaAsig.Type = Parameter.DataType.String
 
         Dim ParamUID As New Parameter
         ParamUID.Key = "UID"
@@ -81,16 +80,16 @@ Partial Class ComparativoQuincenal
         RPT.Parameters.Add(ParamIdRazonSocial)
         RPT.Parameters.Add(ParamIdTipoNominaAsig)
         RPT.Parameters.Add(ParamIdTipoNominaProc)
-        RPT.Parameters.Add(ParamfolioDesde)
         RPT.Parameters.Add(ParamfolioHasta)
+        RPT.Parameters.Add(ParamfolioDesde)
         RPT.Parameters.Add(ParamUID)
         RPT.Parameters.Add(ParamLID)
         RPT.Parameters.Add(ParamidAccion)
 
 
         RPT.Parameters("IdRazonSocial").Value = Request.Params("IdRazonSocial")
-        RPT.Parameters("folioDesde").Value = Request.Params("folioDesde")
         RPT.Parameters("folioHasta").Value = Request.Params("folioHasta")
+        RPT.Parameters("folioDesde").Value = Request.Params("folioDesde")
         RPT.Parameters("UID").Value = "'" + Context.Session("UID") + "'"
         RPT.Parameters("LID").Value = "'" + Context.Session("LID") + "'"
         RPT.Parameters("idAccion").Value = Request.Params("idAccion")
@@ -109,7 +108,7 @@ Partial Class ComparativoQuincenal
             Dim pathApp = MapPath("~")
             pathApp = pathApp + "\ArchivosTemp\"
             Dim strName As String
-            strName = "ComparativoNominaQuincenal" + Context.Session("UID").trim + Date.Now.Day.ToString + Date.Now.Month.ToString + Date.Now.Year.ToString + Date.Now.Minute.ToString + Date.Now.Second.ToString + ".xls"
+            strName = "ComparativoNominaMensual" + Context.Session("UID").trim + Date.Now.Day.ToString + Date.Now.Month.ToString + Date.Now.Year.ToString + Date.Now.Minute.ToString + Date.Now.Second.ToString + ".xls"
             Dim objXls As New DataDynamics.ActiveReports.Export.Xls.XlsExport
             objXls.Export(RPT.Document, pathApp + strName)
             ligaExcel.Text = "<a href='" + Intelexion.Framework.ApplicationConfiguration.ConfigurationSettings.GetConfigurationSettings("ApplicationPath") + "/ArchivosTemp/" + strName + "' >" + "Exportar Excel" + "</a>"
